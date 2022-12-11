@@ -12,13 +12,17 @@
  */
 int main(void)
 {
-	for (char i = 'a'; i <= 'z'; i++)
+	char i = 'a', j = 'A';
+
+	while (i <= 'z')
 	{
 		putchar(i);
+		i++;
 	}
-	for (char j = 'A'; j <= 'Z'; j++)
+	while (j <= 'Z')
 	{
 		putchar(j);
+		j++;
 	}
 	putchar('\n');
 
