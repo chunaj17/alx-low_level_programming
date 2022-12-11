@@ -14,14 +14,18 @@
 
 int main(void)
 {
-	for (int i = 0; i < 10; i++)
+	int i = 0;
+	char j = 'a';
+
+	while (i < 10)
 	{
 		putchar(i % 10 + '0');
-
+		i++;
 	}
-	for (char i = 'a'; i <= 'f'; i++)
+	while (j <= 'f')
 	{
-		putchar(i);
+		putchar(j);
+		j++;
 	}
 	putchar('\n');
 	return (0);

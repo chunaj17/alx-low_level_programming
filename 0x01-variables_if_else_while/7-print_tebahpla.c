@@ -13,9 +13,12 @@
  */
 int main(void)
 {
-	for (char i = 'z'; i >= 'a'; i--)
+	char i = 'z';
+
+	while (i >= 'a')
 	{
 		putchar(i);
+		i--;
 	}
 	putchar('\n');
 	return (0);
