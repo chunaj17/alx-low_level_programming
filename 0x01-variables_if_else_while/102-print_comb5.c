@@ -13,17 +13,16 @@
 
 int main(void)
 {
-	int i = 0, j, k, l;
+	int i = 0, j = 0;
 
 	while (i <= 9)
 	{
-		j = 0;
 		while (j <= 8)
 		{
-			k = 0;
+			int k = i;
 			while (k <= 9)
 			{
-				l = 1;
+				int l = j + 1;
 				while (l <= 9)
 				{
 					putchar(i % 10 + '0');
@@ -35,7 +34,7 @@ int main(void)
 					{
 						putchar(',');
 						putchar(' ');
-					}
+					}	
 					l++;
 				}
 				k++;
