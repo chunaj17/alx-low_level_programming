@@ -9,7 +9,7 @@
 /**
  * main -> prints all possible different combinations of three digits
  *
- * Returns: Always 0
+ * Return: Always 0
  *
  */
 int main(void)
@@ -26,7 +26,7 @@ int main(void)
 			while (k <= 9)
 			{
 				putchar(i % 10 + '0');
-				putchar(j % 10 + '0');	
+				putchar(j % 10 + '0');
 				putchar(k % 10 + '0');
 				if ((i != 7) || (j != 8) || (k != 9))
 				{
