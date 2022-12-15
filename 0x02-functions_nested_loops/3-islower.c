@@ -5,21 +5,16 @@
  */
 
 /**
- * _islower - returns 1 when the char is inlower cas
- *
+ * _islower - returns 1 when the char is inlower case
+ * @c: is the ascii value of character to be checked
  * Return: Always 0
  */
 
 int _islower(int c)
 {
-	char a = 'a';
-
-	while (a <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
-		if (c == a)
-		{
-			return (1);
-		}
+		return (1);
 	}
 	return (0);
 }
