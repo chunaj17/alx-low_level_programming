@@ -13,17 +13,20 @@
 
 int main(void)
 {
-	int i = 0, j = 0;
+	int i = 0;
 
 	while (i <= 9)
 	{
+		int j = 0;
+
 		while (j <= 8)
 		{
 			int k = i;
+
 			while (k <= 9)
 			{
-				int l = j + 1;
-				while (l <= 9)
+				int l = 0;
+				while ( l <= 9)
 				{
 					putchar(i % 10 + '0');
 					putchar(j % 10 + '0');
@@ -32,9 +35,9 @@ int main(void)
 					putchar(l % 10 + '0');
 					if (i != 9 || j != 8 || k != 9 || l != 9)
 					{
-						putchar(',');
-						putchar(' ');
-					}	
+					putchar(',');
+					putchar(' ');
+					}
 					l++;
 				}
 				k++;
