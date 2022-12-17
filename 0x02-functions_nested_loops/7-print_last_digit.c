@@ -3,7 +3,7 @@
  * Author: Samson Jisso
  *
  */
-#include <stdio.h>
+#include "main.h"
 
 
 /**
@@ -16,10 +16,13 @@
 
 int print_last_digit(int d)
 {
-	int last_digit;
-	
-	last_digit = d % 10;
-	printf("%d",last_digit);	
+	int l;
 
-	return (last_digit);
+	l = d % 10;
+	if (d < 0)
+	{
+		l = -l;
+	}
+	_putchar('0' + l);
+	return (l);
 }
