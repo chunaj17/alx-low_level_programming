@@ -5,15 +5,15 @@
 #include "main.h"
 
 /**
- * more_numbers - prints 10 times the numbers, from 0 to 14, followed by a new line.
+ * more_numbers - prints 10 times the numbers, from 0 to 14.
  *
  * Returns: noting
  */
 void more_numbers(void)
 {
-	int i,j,n;
+	int i, j, n;
 
-	for (n = 0; n <= 10; n++)
+	for (n = 0; n = 10; n++)
 	{
 		for (i = 48; i <= 57; i++)
 		{
