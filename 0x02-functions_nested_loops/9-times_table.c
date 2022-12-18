@@ -38,6 +38,7 @@ void print_space_and_comma(int m, int j)
 	{
 		_putchar(' ');
 		_putchar(' ');
+		_putchar(' ');
 	}
 	}
 }
