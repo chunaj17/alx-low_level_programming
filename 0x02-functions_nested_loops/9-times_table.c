@@ -34,13 +34,13 @@ void print_space_and_comma(int m, int j)
 		_putchar(' ');
 
 	}
-	else 
+	else
 	{
 		_putchar(' ');
 		_putchar(' ');
 	}
 	}
-}	
+}
 
 /**
  * times_table - prints multiples of 9 table
