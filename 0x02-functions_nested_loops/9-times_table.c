@@ -4,14 +4,48 @@
  */
 #include "main.h"
 /**
- * times_table - prints the 9 times table
- * print - prints integers more than 9 using putchar
+ * print - prints integers more than 9
  * @n: integer more than 9
- *
- * Return: void
  */
 
-void print(int n);
+void print(int n)
+{
+	if (n / 10)
+	{
+	print(n / 10);
+	}
+	_putchar(n % 10 + '0');
+}
+
+/**
+ * print_space_and_comma - prints space and commas
+ * @m: multiplication result
+ * @j: integer value
+ *
+ */
+
+void print_space_and_comma(int m, int j)
+{
+	if (j != 9)
+	{
+		_putchar(',');
+	if (m > 9)
+	{
+		_putchar(' ');
+
+	}
+	else 
+	{
+		_putchar(' ');
+		_putchar(' ');
+	}
+	}
+}	
+
+/**
+ * times_table - prints multiples of 9 table
+ *
+ */
 
 void times_table(void)
 {
@@ -26,30 +60,14 @@ void times_table(void)
 			if (mul <= 9)
 			{
 				_putchar(mul + '0');
-				if (j != 9)
-				{
-				_putchar(',');
-				_putchar(' ');
-				}
+				print_space_and_comma(mul, j);
 			}
 			else
 			{
 				print(mul);
-				if (j != 9)
-				{
-				_putchar(',');
-				_putchar(' ');
-				}
+				print_space_and_comma(mul, j);
 			}
 		}
 		 _putchar('\n');
 	}
-}
-void print(int n)
-{
-	if (n / 10)
-	{
-	print(n / 10);
-	}
-	_putchar(n % 10 + '0');
 }
