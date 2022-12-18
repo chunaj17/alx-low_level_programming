@@ -6,7 +6,7 @@
 
 /**
  * print_more - prints numbers more than 9 using putchar
- *
+ * @n: integer value
  */
 void print_more(int n)
 {
@@ -31,7 +31,7 @@ void more_numbers(void)
 			{
 				_putchar(i + '0');
 			}
-			else 
+			else
 			{
 				print_more(i);
 			}
