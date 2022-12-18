@@ -26,7 +26,7 @@ void print(int n)
 
 void print_space_and_comma(int m, int j)
 {
-	if (j != 9)
+	if (j != 0)
 	{
 		_putchar(',');
 	if (m > 9)
@@ -36,7 +36,6 @@ void print_space_and_comma(int m, int j)
 	}
 	else
 	{
-		_putchar(' ');
 		_putchar(' ');
 		_putchar(' ');
 	}
@@ -60,13 +59,13 @@ void times_table(void)
 			mul = i * j;
 			if (mul <= 9)
 			{
-				_putchar(mul + '0');
 				print_space_and_comma(mul, j);
+				_putchar(mul + '0');
 			}
 			else
 			{
-				print(mul);
 				print_space_and_comma(mul, j);
+				print(mul);
 			}
 		}
 		 _putchar('\n');
