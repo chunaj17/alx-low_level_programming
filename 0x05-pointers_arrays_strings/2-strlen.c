@@ -4,13 +4,22 @@
  *
  */
 
+#include <stdio.h>
 /**
  * _strlen - returns the length of a string
- * @*s: string value
+ * @s: string value
  *
  * Return: integer
  */
+
 int _strlen(char *s)
 {
-	return (0);
+	int size = 0;
+
+	while (*s != '\0')
+	{
+		size++;
+		s++;
+	}
+	return (size);
 }

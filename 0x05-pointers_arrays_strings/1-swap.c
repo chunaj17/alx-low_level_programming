@@ -5,15 +5,17 @@
  */
 
 #include "main.h"
+#include <stdio.h>
 
 /**
  * swap_int - swapts the valuesof two integers
- * @*a: first integer value pointer
- * @*b: second integer value pointer
+ * @a: first integer value pointer
+ * @b: second integer value pointer
  *
  */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
-	a = *b;
-	b = *a;
+	int aa = *a;
+	*a = *b;
+	*b = aa;
 }
