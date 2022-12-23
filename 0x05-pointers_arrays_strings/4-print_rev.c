@@ -4,20 +4,27 @@
  */
 
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_rev - prints a string, in reverse
  * followed by a new line.
- *
+ * @s: pointer character
  */
 
 void print_rev(char *s)
 {
-	int i;
+	int i = -1;
 
-	for (i = *s - 1; i >= *s[0]: i--)
+	while (*s)
 	{
-		_putchar(*s[i]);
-	}	
+		s++;
+		i++;
+	}
+	while (i  >= 0)
+	{
+		s--;
+		_putchar(*s);
+		--i;
+	}
 	_putchar('\n');
 }
