@@ -23,7 +23,7 @@ int sqrRootCheck(int a, int b)
 	{
 		return (-1);
 	}
-	return (check(a + 1, b));
+	return (sqrRootCheck(a + 1, b));
 }
 /**
  * _sqrt_recursion - a function that returns the

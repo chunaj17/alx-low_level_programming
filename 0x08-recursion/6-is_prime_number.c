@@ -33,16 +33,16 @@ int is_prime_number(int n)
 
 int validatePrime(int f, int s)
 {
-	if (s < 2 || b % a == 0)
+	if (s < 2 || s % f == 0)
 	{
 		return (0);
 	}
-	else if (a > b / 2)
+	else if (f > s / 2)
 	{
 		return (1);
 	}
 	else
 	{
-		return (check(a + 1, b));
+		return (validatePrime(f + 1, s));
 	}
 }
